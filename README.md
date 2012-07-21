@@ -1,7 +1,8 @@
 Sublime-JSLint
 ==============
 
-Run JSLint whenever you save a JavaScript file in Sublime Text 2.
+JSLint build system for Sublime Text 2. Optionally, run JSLint whenever you save a .js, .css, .sass, .less, or .json
+file.
 
 Prerequisites
 -------------

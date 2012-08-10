@@ -1,0 +1,3 @@
+[{
+  "keys": ["ctrl+l"], "command": "jslint"
+}]

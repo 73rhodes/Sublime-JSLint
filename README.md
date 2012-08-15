@@ -12,7 +12,7 @@ npm -g install jslint
 Installation
 ------------
 
-Save files to the Packages/JSLint directory:
+Save files to the Packages/JSLint directory, then relaunch Sublime:
 
    * Linux: ~/.config/sublime-text-2/Packages/JSLint
    * Mac: ~/Library/Application Support/Sublime Text 2/Packages/JSLint

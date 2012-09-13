@@ -34,5 +34,6 @@ Any of the following will work:
    * Press ctrl-L
    * Just save a .js file
 
-Settings:
+Settings
+--------
    * Edit filename extensions under Preferences > Package Settings > JSLint. Any filename extensions there will be jslinted on save.

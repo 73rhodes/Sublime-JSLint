@@ -2,7 +2,8 @@ Sublime-JSLint
 ==============
 
 JSLint build system for Sublime Text 2, using jslint for node. Optionally, run JSLint whenever
-you save a .js, .css, .sass, .less, or .json file.
+you save a .js, .css, .sass, .less, or .json file. Adds menu items to run JSLint manually or 
+change preferences. Jump to next / previous error using F4 / Shift+F4.
 
 Prerequisites
 -------------

@@ -13,11 +13,19 @@ npm -g install jslint
 Installation
 ------------
 
-Save files to the Packages/JSLint directory, then relaunch Sublime:
+### Using Package Control:
 
-   * Linux: ~/.config/sublime-text-2/Packages/JSLint
-   * Mac: ~/Library/Application Support/Sublime Text 2/Packages/JSLint
-   * Windows: %APPDATA%/Sublime Text 2/Packages/JSLint
+   * Press Ctrl+Shift+P to bring up the Command Palette (or use Tools > Command Palette menu)
+   * Select Package Control: Install Package
+   * Type 'JSLint' to find JSLint (with node) for Sublime Text 2
+   * Select 'JSLint (with node) for Sublime Text 2' to install
+
+
+### Not using Package Control:
+   * Save files to the Packages/JSLint directory, then relaunch Sublime:
+      * Linux: ~/.config/sublime-text-2/Packages/JSLint
+      * Mac: ~/Library/Application Support/Sublime Text 2/Packages/JSLint
+      * Windows: %APPDATA%/Sublime Text 2/Packages/JSLint
 
 Usage
 -----
@@ -27,5 +35,6 @@ Any of the following will work:
    * Press ctrl-L
    * Just save a .js file
 
-Settings:
+Settings
+--------
    * Edit filename extensions under Preferences > Package Settings > JSLint. Any filename extensions there will be jslinted on save.

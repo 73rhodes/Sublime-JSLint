@@ -12,7 +12,8 @@ npm -g install jslint
 
 Installation
 ------------
-Using Package Control:
+
+### Using Package Control:
 
    * Press Ctrl+Shift+P to bring up the Command Palette (or use Tools > Command Palette menu)
    * Select Package Control: Install Package
@@ -20,7 +21,7 @@ Using Package Control:
    * Select 'JSLint (with node) for Sublime Text 2' to install
 
 
-Not using Package Control:
+### Not using Package Control:
    * Save files to the Packages/JSLint directory, then relaunch Sublime:
       * Linux: ~/.config/sublime-text-2/Packages/JSLint
       * Mac: ~/Library/Application Support/Sublime Text 2/Packages/JSLint

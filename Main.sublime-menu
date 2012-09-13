@@ -39,6 +39,13 @@
                 "caption": "Settings – User"
               },
               {
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/JSLint/JSLint.sublime-build"
+                },
+                "caption": "Advanced Build Settings"
+              },
+              {
                 "caption": "-"
               }
             ]

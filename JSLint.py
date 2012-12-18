@@ -3,7 +3,7 @@ import sublime, sublime_plugin, re
 class autoJSLint(sublime_plugin.EventListener):
   def on_post_save(self, view):
     settings = sublime.load_settings("JSLint.sublime-settings")
-    if re.search( settings.get( "filename_filter" ), view.file_name() ):
+    if settings.get("run_on_save") and re.search(settings.get("filename_filter"), view.file_name()):
       view.window().run_command( "build" )
 
 class JslintCommand(sublime_plugin.WindowCommand):

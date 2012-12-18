@@ -37,8 +37,9 @@ Any of the following will work:
    * Select 'JSLint' under Tools > Build System and run Build.
    * Select Tools > JSLint
    * Press ctrl-L
-   * Just save a .js file
+   * Just save a .js file (may be changed in package settings)
 
 Settings
 --------
    * Edit filename extensions under Preferences > Package Settings > JSLint. Any filename extensions there will be jslinted on save.
+   * You can disable autolint on postSave event in preferences, just set 'run_on_save' to false

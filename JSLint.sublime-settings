@@ -1,3 +1,4 @@
 {
-	"filename_filter": "(\\.css|\\.js|\\.html|\\.json|\\.sass|\\.less)$"
+	"filename_filter": "(\\.css|\\.js|\\.html|\\.json|\\.sass|\\.less)$",
+	"run_on_save": true
 }

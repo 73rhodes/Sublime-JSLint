@@ -1,7 +1,7 @@
 {
 	"cmd": [
 	  "/usr/local/bin/node", 
-	  "/usr/local/bin/jslint",
+	  "${packages}/JSLint/linter.js",
 	  // tolerate missing 'use strict' pragma
 	  "--sloppy",
 	  // suggest an indent level of two spaces
@@ -16,8 +16,9 @@
 	  "--vars",
 	  // tolerate ++ and --
 	  "--plusplus",
-	  // tolerate Douglas Crockford's narrow-mindedness on syncronous functions
+	  // tolerate Douglas Crockford
 	  "--stupid",
+	  "--todo",
 	  "$file"
 	],
 	"file_regex": "^\\/.*\\/([^\\/]*)$",

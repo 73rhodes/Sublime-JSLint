@@ -1,3 +1,3 @@
 {
-	"filename_filter": "(\\.css|\\.js|\\.html|\\.json|\\.sass|\\.less)$"
+	"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
 }

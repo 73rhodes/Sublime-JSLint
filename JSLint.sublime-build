@@ -1,6 +1,6 @@
 {
 	"cmd": [
-	  "/usr/local/bin/node", 
+	  "node", 
 	  "${packages}/JSLint/linter.js",
 	  // tolerate missing 'use strict' pragma
 	  "--sloppy",

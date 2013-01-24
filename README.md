@@ -6,8 +6,8 @@ JSLint build system for Sublime Text 2, using node.
    * Optionally run JSLint when you save a .js, .css, .sass, .less, or .json file.
    * Menu items to run JSLint manually and set preferences.
    * Jump to error using F4 / Shift+F4.
-   * R2.0 no longer requires you to install the jslint module from npm (its built-in).
-   * Now runs on Linux, MacOS and Windows.
+   * Built-in jslint; only needs Node.JS installed on your system.
+   * Runs on Linux, MacOS and Windows.
 
 Prerequisites
 -------------

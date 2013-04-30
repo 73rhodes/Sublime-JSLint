@@ -1,5 +1,7 @@
-[{
-  "id": "jslint",
-  "caption": "JSLint",
-  "command": "jslint"
-}]
+[
+    {
+        "id": "jslint",
+        "caption": "JSLint File",
+        "command": "js_lint_file"
+    }
+]

@@ -1,3 +1,34 @@
 {
+    // a regex string to determine whether to run jslint
+    // on a file which has just been saved.
+    // if a match is found, the file will be linted.
 	"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
+
+
+    // an array of options to pass to jslint, e.g.
+    // ["--white", "--vars"]
+    // ATTENTION. If your using the linter coming with this package
+    // (i.e. if you have not changed the "jslint" key)
+    // you can currently only pass values to the
+    // "indent", "maxerr" and "maxlen" options, like so ["--indent", "2"].
+
+    ,"options" : []
+
+
+    // jslint command you want to run as an array of strings.
+    // E.g.: ["jslint"] or ["node", "mylinter.js"]
+    // Default is ["node", "$YourPackagesDirectory/JSLint/linter.js"]
+    // using the linter which comes with this package.
+
+    // ,"jslint" : ["jslint"]
+
+
+    // if your own personal choice of jslint has an output
+    // different from the standard which comes with this package,
+    // you may have to change line_regex and file_regex
+    // check http://docs.sublimetext.info/en/latest/reference/build_systems.html
+    // to find out how these regular expressions work. The defaults are:
+
+    // , "line_regex" : ".*// Line ([0-9]*), Pos ([0-9]*)$"
+    // , "file_regex" : "(^[^# ]+.*$)"
 }

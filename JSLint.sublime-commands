@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "JSLint: File",
+        "command": "js_lint_file"
+    },
+    {
+        "caption": "JSLint: Containing Folder",
+        "command": "js_lint_containing_folder"
+    }
+]

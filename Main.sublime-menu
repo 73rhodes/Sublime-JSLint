@@ -42,7 +42,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/JanJanJan/Default.sublime-keymap"
+                                    "file": "${packages}/JSLint/Default.sublime-keymap"
                                 },
                                 "caption": "Key Bindings – Default"
                             },

@@ -1,24 +1,21 @@
 {
     // a regex string to determine whether to run jslint
-    // on a file which has just been saved.
+    // on a file which has just been saved or is contained in a folder.
     // if a match is found, the file will be linted.
 	"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
 
 
     // an array of options to pass to jslint, e.g.
-    // ["--white", "--vars"]
-    // ATTENTION. If your using the linter coming with this package
-    // (i.e. if you have not changed the "jslint" key)
-    // you can currently only pass values to the
-    // "indent", "maxerr" and "maxlen" options, like so ["--indent", "2"].
-
-    //,"options" : []
+    // ["--white", "--vars"] or maybe ["--indent", "2", "--node", "false"]
+    // see https://github.com/reid/node-jslint
+    // or http://www.jslint.com/lint.html#options
+    , "options" : ["--node", "false"]
 
 
     // jslint command you want to run as an array of strings.
-    // E.g.: ["jslint"] or ["node", "mylinter.js"]
-    // Default is ["node", "$YourPackagesDirectory/JSLint/linter.js"]
-    // using the linter which comes with this package.
+    // E.g.: ["jslint"] or ["/usr/local/bin/jslint"] or ["node", "mylinter.js"]
+    // Default is ["node", "$YourPackagesDirectory/JSLint/node_modules/jslint/bin/jslint"]
+    // using node-jslint v0.1.9. https://github.com/reid/node-jslint/tree/v0.1.9
 
     // ,"jslint" : ["jslint"]
 

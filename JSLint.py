@@ -43,11 +43,14 @@ class JsLintExecCommand(sublime_plugin.WindowCommand):
 			'file_regex': settings.get("file_regex", "(^[^# ]+.*$)")
 		})
 
-class autoJSLint(sublime_plugin.EventListener):
+class JsLintOnSave(sublime_plugin.EventListener):
 	def on_post_save(self, view):
 		settings = sublime.load_settings('JSLint.sublime-settings')
+		print settings
+		if settings.get('run_on_save', False) == False:
+			return
 		if re.search(settings.get('filename_filter'), view.file_name()):
-			view.window().run_command('jslint')
+			view.window().run_command('js_lint_exec', {'files': [view.file_name()]})
 
 # Support calls to the old API of the JSLint package.
 class JslintCommand(sublime_plugin.WindowCommand):

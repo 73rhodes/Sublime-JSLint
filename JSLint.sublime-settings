@@ -1,15 +1,18 @@
 {
-    // a regex string to determine whether to run jslint
-    // on a file which has just been saved or is contained in a folder.
-    // if a match is found, the file will be linted.
-	"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
-
-
     // an array of options to pass to jslint, e.g.
     // ["--white", "--vars"] or maybe ["--indent", "2", "--node", "false"]
     // see https://github.com/reid/node-jslint
     // or http://www.jslint.com/lint.html#options
-    , "options" : ["--node", "false"]
+    "options" : ["--node", "false"]
+
+    // if true, run jslint on save.
+    ,"run_on_save" : true
+
+    // a regex string to determine whether jslint
+    // should be run on a file.
+    // if a match is found (i.e. re.search(filename_filter, filename)),
+    // the file will be linted.
+    ,"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
 
 
     // jslint command you want to run as an array of strings.
@@ -26,6 +29,6 @@
     // check http://docs.sublimetext.info/en/latest/reference/build_systems.html
     // to find out how these regular expressions work. The defaults are:
 
-    // , "line_regex" : ".*// Line ([0-9]*), Pos ([0-9]*)$"
-    // , "file_regex" : "(^[^# ]+.*$)"
+    // ,"line_regex" : ".*// Line ([0-9]*), Pos ([0-9]*)$"
+    // ,"file_regex" : "(^[^# ]+.*$)"
 }

@@ -48,3 +48,8 @@ class autoJSLint(sublime_plugin.EventListener):
 		settings = sublime.load_settings('JSLint.sublime-settings')
 		if re.search(settings.get('filename_filter'), view.file_name()):
 			view.window().run_command('jslint')
+
+# Support calls to the old API of the JSLint package.
+class JslintCommand(sublime_plugin.WindowCommand):
+	def run(self):
+		self.window.run_command('js_lint_exec', {'files': [self.window.active_view().file_name()]})

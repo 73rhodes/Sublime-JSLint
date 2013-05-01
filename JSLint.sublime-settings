@@ -12,7 +12,7 @@
     // you can currently only pass values to the
     // "indent", "maxerr" and "maxlen" options, like so ["--indent", "2"].
 
-    ,"options" : []
+    //,"options" : []
 
 
     // jslint command you want to run as an array of strings.

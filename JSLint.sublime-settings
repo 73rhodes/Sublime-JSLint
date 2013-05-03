@@ -2,8 +2,26 @@
     // an array of options to pass to jslint, e.g.
     // ["--white", "--vars"] or maybe ["--indent", "2", "--node", "false"]
     // see https://github.com/reid/node-jslint
-    // or http://www.jslint.com/lint.html#options
-    "options" : ["--node", "false"]
+    // or http://www.jslint.com/lint.html#options.
+    "options" : [
+        // tolerate missing 'use strict' pragma
+        // do not use this pragma unless you know what you are doing.
+        "--sloppy",
+        // suggest an indent level of two spaces.
+        "--indent", "2",
+        // assume node.js to predefine node globals.
+        "--node",
+        // tolerate unfiltered for in
+        //"--forin",
+        // tolerate dangling _ in identifiers.
+        "--nomen",
+        // tolerate many var statements per function.
+        "--vars",
+        // tolerate ++ and --.
+        "--plusplus",
+        // tolerate stupidity.
+        "--stupid"
+    ]
 
     // if true, run jslint on save.
     ,"run_on_save" : true

@@ -64,7 +64,6 @@ class JsLintOnSave(sublime_plugin.EventListener):
 
 	def on_post_save(self, view):
 		settings = sublime.load_settings(SETTINGS_FILE)
-		print settings
 		if settings.get('run_on_save', False) == False:
 			return
 		if re.search(settings.get('filename_filter'), view.file_name()):

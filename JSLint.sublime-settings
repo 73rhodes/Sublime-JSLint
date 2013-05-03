@@ -35,7 +35,10 @@
 
     // jslint command you want to run as an array of strings.
     // E.g.: ["jslint"] or ["/usr/local/bin/jslint"] or ["node", "mylinter.js"]
-    // Default is ["node", "$YourPackagesDirectory/JSLint/node_modules/jslint/bin/jslint"]
+    // Default is
+    //    * Linux: ["node", "~/.config/sublime-text-2/Packages/JSLint/node_modules/jslint/bin/jslint"]
+    //    * Mac: ["node", "~/Library/Application Support/Sublime Text 2/Packages/JSLint/node_modules/jslint/bin/jslint"]
+    //    * Windows: ["node", "%APPDATA%/Sublime Text 2/Packages/JSLint/node_modules/jslint/bin/jslint"]
     // using node-jslint v0.1.9. https://github.com/reid/node-jslint/tree/v0.1.9
 
     // ,"jslint" : ["jslint"]

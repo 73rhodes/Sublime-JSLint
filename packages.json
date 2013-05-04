@@ -4,14 +4,14 @@
         {
             "name": "JSLint",
             "description": "JSLint plugin for Sublime Text 2, using node and node-jslint.",
-            "author": "Jan Raasch",
+            "author": "Jan Raasch (janraasch)",
             "homepage": "https://github.com/janraasch/Sublime-JSLint",
             "last_modified": "2012-05-04 17:00:00",
             "platforms": {
                 "*": [
                     {
                         "version": "1.0.0",
-                        "url": "https://nodeload.github.com/janraasch/Sublime-JSLint/zip/v1.0.0"
+                        "url": "https://nodeload.github.com/janraasch/Sublime-JSLint/zip/1.0.0"
                     }
                 ]
             }

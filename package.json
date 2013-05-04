@@ -1,13 +1,13 @@
 {
     "name": "Sublime-JSLint",
-    "description": "The JavaScript Code Quality Tool for Sublime Text 2",
+    "description": "JSLint plugin for Sublime Text 2, using node and node-jslint.",
     "homepage": "https://github.com/janraasch/Sublime-JSLint",
     "keywords": [
         "lint",
         "sublime",
         "sublimetext"
     ],
-    "version": "0.0.1",
+    "version": "1.0.0",
     "author": {
         "name": "Jan Raasch"
     },

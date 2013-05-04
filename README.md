@@ -20,12 +20,15 @@ You can download **node** from the [node download page](http://nodejs.org/downlo
 Installation
 ------------
 
-### Using Package Control:
+### Using [Package Control](http://wbond.net/sublime_packages/package_control):
 
-   * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-   * Select `Package Control: Install Package`.
-   * Type `JSLint` to find `JSLint (with node) for Sublime Text 2`.
-   * Select `JSLint (with node) for Sublime Text 2` to install.
+  * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
+  * Select `Package Control: Add Repository`.
+  * Enter `https://github.com/janraasch/Sublime-JSLint/`.
+  * Bring up the **Command Palette**.
+  * Select `Package Control: Install Package`.
+  * Type `JSLint` to find `JSLint (with node) for Sublime Text 2`.
+  * Select `JSLint (with node) for Sublime Text 2` to install.
 
 
 ### Not using Package Control:

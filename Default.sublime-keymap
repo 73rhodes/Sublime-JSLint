@@ -1,7 +1,7 @@
 [
     {
         "keys": [
-            "ctrl+l"
+            "ctrl+alt+l"
         ],
         "command": "js_lint_file"
     }

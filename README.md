@@ -1,13 +1,13 @@
 Sublime-JSLint
 ==============
 
-[JSLint](http://www.jslint.com/) plugin for Sublime Text 2, using [node](http://nodejs.org) and [node-jslint](https://github.com/reid/node-jslint). 
+[JSLint](http://www.jslint.com/) plugin for Sublime Text 2, using [node](http://nodejs.org). 
 
    * Optionally run JSLint when you save a .js, .css, .sass, .less, or .json file.
    * Run JSLint on a folder from side bar context menu.
    * Jump to errors using F4 / Shift+F4.
    * Menu items to run JSLint manually and set preferences.
-   * Built-in [node-jslint](https://github.com/reid/node-jslint); only needs [NodeJS installed on your system](http://nodejs.org/download/).
+   * Only needs [NodeJS installed on your system](http://nodejs.org/download/).
    * Runs on Linux, MacOS and Windows.
 
 Prerequisites

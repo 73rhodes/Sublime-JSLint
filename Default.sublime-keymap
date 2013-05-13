@@ -1,3 +1,8 @@
-[{
-  "keys": ["ctrl+l"], "command": "jslint"
-}]
+[
+    {
+        "keys": [
+            "ctrl+l"
+        ],
+        "command": "js_lint_file"
+    }
+]

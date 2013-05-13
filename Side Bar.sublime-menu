@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "-",
+        "id": "folder_commands"
+    },
+    {
+        "caption": "JSLint Folder",
+        "command": "js_lint_folder",
+        "args": {
+            "dirs": []
+        }
+    }
+]

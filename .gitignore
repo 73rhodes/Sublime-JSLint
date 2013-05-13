@@ -22,6 +22,8 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .tm_properties
+package-metadata.json
+*.pyc
 
 # Dreamweaver added files
 _notes

@@ -21,11 +21,7 @@ Installation
 ------------
 
 ### Using [Package Control](http://wbond.net/sublime_packages/package_control):
-
   * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-  * Select `Package Control: Add Repository`.
-  * Enter `https://github.com/janraasch/Sublime-JSLint/`.
-  * Bring up the **Command Palette**.
   * Select `Package Control: Install Package`.
   * Type `JSLint` to find `JSLint (with node) for Sublime Text 2`.
   * Select `JSLint (with node) for Sublime Text 2` to install.
@@ -99,7 +95,7 @@ Settings
     // should be run on a file.
     // if a match is found (i.e. re.search(filename_filter, filename)),
     // the file will be linted.
-    ,"filename_filter": "(\\.js)$"
+    ,"filename_filter": "(\\.js|\\.json)$"
 
 
     // jslint command you want to run as an array of strings.

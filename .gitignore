@@ -24,7 +24,6 @@ nbproject
 .tm_properties
 package-metadata.json
 *.pyc
-node_modules
 
 # Folders to ignore
 .hg

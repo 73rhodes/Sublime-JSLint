@@ -7,33 +7,33 @@
         
         // assume node.js to predefine node globals,
         // defaults to true in `node-jslint`.
-        "--node", "false"
+        "--node", "true"
         
         // ES5 syntax should be allowed,
         // defaults to true in `node-jslint`.
-        ,"--es5", "false"
+        ,"--es5", "true"
         
         // tolerate missing 'use strict' pragma
         // do not use this pragma unless you know what you are doing.
-        // ,"--sloppy"
+        ,"--sloppy"
         
         // suggest an indent level of two spaces.
-        // ,"--indent", "2"
+        ,"--indent", "2"
         
         // tolerate unfiltered for in.
-        // ,"--forin"
+        ,"--forin"
         
         // tolerate dangling _ in identifiers.
-        // ,"--nomen"
+        ,"--nomen"
         
         // tolerate many var statements per function.
-        // ,"--vars"
+        ,"--vars"
         
         // tolerate ++ and --.
-        // ,"--plusplus"
+        ,"--plusplus"
         
         // tolerate stupidity.
-        // ,"--stupid"
+        ,"--stupid"
 
     ]
 

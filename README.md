@@ -3,9 +3,9 @@ Sublime-JSLint
 
 [JSLint](http://www.jslint.com/) plugin for Sublime Text 2, using [node](http://nodejs.org). 
 
-   * Optionally run JSLint when you save a .js, .css, .sass, .less, or .json file.
+   * Optionally run JSLint when you save a `.js` or `.json` file.
    * Run JSLint on a folder from side bar context menu.
-   * Jump to errors using F4 / Shift+F4.
+   * Jump to errors using `F4` / `Shift+F4`.
    * Menu items to run JSLint manually and set preferences.
    * Only needs [NodeJS installed on your system](http://nodejs.org/download/).
    * Runs on Linux, MacOS and Windows.
@@ -20,12 +20,15 @@ You can download **node** from the [node download page](http://nodejs.org/downlo
 Installation
 ------------
 
-### Using Package Control:
+### Using [Package Control](http://wbond.net/sublime_packages/package_control):
 
-   * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
-   * Select `Package Control: Install Package`.
-   * Type `JSLint` to find `JSLint (with node) for Sublime Text 2`.
-   * Select `JSLint (with node) for Sublime Text 2` to install.
+  * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows).
+  * Select `Package Control: Add Repository`.
+  * Enter `https://github.com/janraasch/Sublime-JSLint/`.
+  * Bring up the **Command Palette**.
+  * Select `Package Control: Install Package`.
+  * Type `JSLint` to find `JSLint (with node) for Sublime Text 2`.
+  * Select `JSLint (with node) for Sublime Text 2` to install.
 
 
 ### Not using Package Control:
@@ -42,8 +45,8 @@ Any of the following will work:
       * type `JSLint: Containing Folder` to run JSLint on the whole folder containing the current file.
    * Right click a folder inside the **Side Bar** and click **JSLint Folder**.
    * Click the **Tools > JSLint** menu entry.
-   * Press ctrl-L.
-   * Just save a .js, .css, .sass, .less, or .json file.
+   * Press `CTRL+ALT+L`.
+   * Just save a `.js` file.
 
 Settings
 --------
@@ -54,25 +57,39 @@ Settings
     // an array of options to pass to jslint, e.g.
     // ["--white", "--vars"] or maybe ["--indent", "2", "--node", "false"]
     // see https://github.com/reid/node-jslint
-    // or http://www.jslint.com/lint.html#options for all available options.
+    // or http://www.jslint.com/lint.html#options.
     "options" : [
+        
+        // assume node.js to predefine node globals,
+        // defaults to true in `node-jslint`.
+        "--node", "false"
+        
+        // ES5 syntax should be allowed,
+        // defaults to true in `node-jslint`.
+        ,"--es5", "false"
+        
         // tolerate missing 'use strict' pragma
         // do not use this pragma unless you know what you are doing.
-        "--sloppy",
+        // ,"--sloppy"
+        
         // suggest an indent level of two spaces.
-        "--indent", "2",
-        // assume node.js to predefine node globals.
-        "--node",
-        // tolerate unfiltered for in
-        //"--forin",
+        // ,"--indent", "2"
+        
+        // tolerate unfiltered for in.
+        // ,"--forin"
+        
         // tolerate dangling _ in identifiers.
-        "--nomen",
+        // ,"--nomen"
+        
         // tolerate many var statements per function.
-        "--vars",
+        // ,"--vars"
+        
         // tolerate ++ and --.
-        "--plusplus",
+        // ,"--plusplus"
+        
         // tolerate stupidity.
-        "--stupid"
+        // ,"--stupid"
+
     ]
 
     // if true, run jslint on save.
@@ -82,7 +99,7 @@ Settings
     // should be run on a file.
     // if a match is found (i.e. re.search(filename_filter, filename)),
     // the file will be linted.
-    ,"filename_filter": "(\\.js|\\.css|\\.html|\\.json|\\.sass|\\.less)$"
+    ,"filename_filter": "(\\.js)$"
 
 
     // jslint command you want to run as an array of strings.

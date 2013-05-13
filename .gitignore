@@ -25,14 +25,6 @@ nbproject
 package-metadata.json
 *.pyc
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Folders to ignore
 .hg
 .svn

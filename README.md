@@ -123,3 +123,8 @@ Settings
     // ,"file_regex" : "(^[^# ]+.*$)"
 }
 ```
+
+Contributors
+------------
+   * Darren DeRidder
+   * Jan Raasch

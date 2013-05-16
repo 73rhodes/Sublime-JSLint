@@ -1,3 +1,6 @@
+Note: this plugin was recently updated. If you experience an error "JSLint.sublime-build file not found", please
+go into the Tools menu and set your Build System to "Automatic" which will reset the build plugin.
+
 Sublime-JSLint
 ==============
 

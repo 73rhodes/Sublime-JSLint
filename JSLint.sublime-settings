@@ -32,8 +32,11 @@
         // tolerate ++ and --.
         ,"--plusplus"
         
-        // tolerate stupidity.
+        // tolerate Crockford's view of synchronous functions
         ,"--stupid"
+
+        // tolerate bitwise operators
+        ,"--bitwise"
 
     ]
 

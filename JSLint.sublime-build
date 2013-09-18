@@ -2,6 +2,9 @@
 	"cmd": [
 	  "node", 
 	  "${packages}/JSLint/linter.js",
+
+	  // Examples using predef flag
+	  "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']",
 	  // tolerate missing 'use strict' pragma
 	  "--sloppy",
 	  // suggest an indent level of two spaces

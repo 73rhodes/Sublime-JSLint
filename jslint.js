@@ -1837,7 +1837,7 @@ klass:              do {
                                 if (i >= 0) {
                                     break;
                                 }
-                                i = source_row.indexOf('<!');
+                                i = source_row.indexOf('<!--');
                                 if (i >= 0) {
                                     stop_at('nested_comment',
                                         line, character + i);
@@ -1846,7 +1846,7 @@ klass:              do {
                                     stop_at('unclosed_comment', length, c);
                                 }
                             }
-                            length = source_row.indexOf('<!');
+                            length = source_row.indexOf('<!--');
                             if (length >= 0 && length < i) {
                                 stop_at('nested_comment',
                                     line, character + length);

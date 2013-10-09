@@ -25,6 +25,8 @@ class JsLintContainingFolderCommand(sublime_plugin.WindowCommand):
 			'dirs': [os.path.abspath(os.path.join(self.window.active_view().file_name(), os.pardir))]
 		})
 
+	def is_visible(self, dirs):
+		return (sublime.platform() != "windows")
 
 class JsLintFolderCommand(sublime_plugin.WindowCommand):
 
@@ -43,7 +45,7 @@ class JsLintFolderCommand(sublime_plugin.WindowCommand):
 		})
 
 	def is_visible(self, dirs):
-		return len(dirs) > 0
+		return ((sublime.platform() != "windows") & (len(dirs) > 0))
 
 
 class JsLintExecCommand(sublime_plugin.WindowCommand):

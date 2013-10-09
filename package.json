@@ -1,5 +1,6 @@
 {
     "name": "Sublime-JSLint",
+    "private": true,
     "description": "JSLint plugin for Sublime Text 2, using node and node-jslint.",
     "homepage": "https://github.com/darrenderidder/Sublime-JSLint",
     "keywords": [
@@ -7,18 +8,18 @@
         "sublime",
         "sublimetext"
     ],
-    "version": "1.0.0",
+    "version": "0.0.0",
     "author": {
         "name": "Darren DeRidder"
     },
     "contributors": [
         {
            "name": "Jan Raasch",
-           "email": "",
-           "url": "https://github.com/janraasch"
+           "email": "jan@janraasch.com",
+           "url": "http://janraasch.com"
         }
     ],
     "dependencies": {
-        "jslint": "0.1.9"
+        "jslint": "git://github.com/reid/node-jslint.git#master"
     }
 }

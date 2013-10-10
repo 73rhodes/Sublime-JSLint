@@ -70,6 +70,5 @@ When, on saving a .js file, you get this:
 
 then probably the command to run nodejs is different on your system.
 Go to Preferences -> Package settings -> JSLint -> Advanced build settings to change it.
-The first item in the list under ``cmd`` is the name of the binary. 
-On Ubuntu 13.04, for example, this should be changed to ``nodejs``.
+The first item in the list under ``cmd`` is the name of the binary.
 

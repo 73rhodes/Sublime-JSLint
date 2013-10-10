@@ -32,7 +32,7 @@ Installation
       * Windows: %APPDATA%/Sublime Text 2/Packages/JSLint
 
 ### Note for Sublime Text 3 Users:
-   * Get files from the package archive and unzip to Packages/JSLint directory:
+   * Get files from the [package archive](https://github.com/darrenderidder/Sublime-JSLint/archive/master.zip) and unzip to Packages/JSLint directory:
       * Linux: ~/.config/sublime-text-3/Packages/JSLint
       * Mac: ~/Library/Application Support/Sublime Text 3/Packages/JSLint
       * Windows: %APPDATA%/Sublime Text 3/Packages/JSLint

@@ -1,7 +1,7 @@
 Sublime-JSLint
 ==============
 
-Fast and easy JSLint build system for Sublime Text 2 and Node.JS.
+Fast and easy JSLint build system for Sublime Text and Node.JS.
 
    * Does not require Java&trade;.
    * It has jslint built in; only needs [Node.JS](http://nodejs.org) installed on your system.

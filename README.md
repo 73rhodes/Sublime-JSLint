@@ -72,12 +72,15 @@ When, on saving a .js file, you get this:
     [cmd:  [u'node', ...]]
 
 
-then probably the command to run nodejs is different on your system.
-Navigate to **Preferences > Package Settings > JSLint > Settings - User** to change it.
-Add e.g.
+the command to run node might not be in your path. 
+
+Mac OS X users, ensure that `/usr/local/bin` is in your `$PATH` environment variable.
+
+Linux users, if your node command is 'nodejs', as is the case when installing from some Linux repos,  
+navigate to **Preferences > Package Settings > JSLint > Settings - User** to change it, e.g.
 ```js
 {
    "jslint": ["nodejs", "~/.config/sublime-text-2/Packages/JSLint/linter.js"]
 }
 ```
-if your node command is `nodejs`.
+

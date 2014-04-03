@@ -55,66 +55,9 @@ Any of the following will work:
 
 Settings
 --------
-* Navigate to **Preferences > Package Settings > JSLint > Settings - User**.
-* Edit and paste the following json object into that file.
-```js
-{
-    // an array of options to pass to jslint, e.g.
-    // ["--white", "--vars"] or maybe ["--indent", "2", "--node", "false"]
-    "options" : [
+* Navigate to **Preferences > Package Settings > JSLint > Settings - Default**.
+* You may copy and paste the default settings to **Preferences > Package Settings > JSLint > Settings - Default**, and modify them to your requirements.
 
-      // examples using predef flag.
-      "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
-      // tolerate missing 'use strict' pragma.
-      ,"--sloppy"
-      // suggest an indent level of two spaces.
-      ,"--indent", "2"
-      // assume node.js to predefine node globals.
-      ,"--node"
-      // tolerate unfiltered for in.
-      //,"--forin"
-      // tolerate dangling _ in identifiers.
-      ,"--nomen"
-      // tolerate many var statements per function.
-      ,"--vars"
-      // tolerate ++ and --.
-      ,"--plusplus"
-      // tolerate Douglas Crockford.
-      ,"--stupid"
-      ,"--todo"
-
-    ]
-
-    // if true, run jslint on save.
-    ,"run_on_save" : true
-
-    // a regex string to determine whether jslint
-    // should be run on a file.
-    // if a match is found (i.e. re.search(filename_filter, filename)),
-    // the file will be linted.
-    ,"filename_filter": "(\\.js|\\.json)$"
-
-
-    // jslint command you want to run as an array of strings.
-    // E.g.: ["jslint"] or ["/usr/local/bin/jslint"] or ["node", "mylinter.js"]
-    // Default is
-    //    * Linux: ["node", "~/.config/sublime-text-2/Packages/JSLint/linter.js"]
-    //    * Mac: ["node", "~/Library/Application Support/Sublime Text 2/Packages/JSLint/linter.js"]
-    //    * Windows: ["node", "%APPDATA%/Sublime Text 2/Packages/JSLint/linter.js"]
-
-    // ,"jslint" : ["jslint"]
-
-
-    // if your own personal choice of jslint has an output
-    // different from the standard which comes with this package,
-    // you may have to change line_regex and file_regex
-    // check http://docs.sublimetext.info/en/latest/reference/build_systems.html
-    // to find out how these regular expressions work. The defaults are:
-
-    // ,"line_regex" : ".*// Line ([0-9]*), Pos ([0-9]*)$"
-    // ,"file_regex" : "(^[^# ]+.*$)"
-}
-```
 
 Troubleshooting
 ---------------

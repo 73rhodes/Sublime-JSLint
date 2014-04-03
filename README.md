@@ -56,7 +56,9 @@ Any of the following will work:
 Settings
 --------
 * Navigate to **Preferences > Package Settings > JSLint > Settings - Default**.
-* You may copy and paste the default settings to **Preferences > Package Settings > JSLint > Settings - Default**, and modify them to your requirements.
+* To preserve custom settings:
+  * copy default settings to **Preferences > Package Settings > JSLint > Settings - User**
+  * modify them to your requirements
 
 
 Troubleshooting

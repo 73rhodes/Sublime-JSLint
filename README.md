@@ -39,8 +39,8 @@ Installation
 
 ```
 cd "%APPDATA%/Sublime Text 3/Packages"
-C:> mkdir JSHint
-C:> cd JSHint
+C:> mkdir JSLint
+C:> cd JSLint
 
 Unzip the files from the package archive here.
 ```

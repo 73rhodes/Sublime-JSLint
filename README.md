@@ -42,7 +42,7 @@ cd "%APPDATA%/Sublime Text 3/Packages"
 C:> mkdir JSHint
 C:> cd JSHint
 
-Unzip the files from the package archive here.
+Unzip the files from the package archive here and rename Sublime-JSLint-master/ to simply JSLint/
 ```
 
 Usage

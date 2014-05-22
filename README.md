@@ -18,7 +18,7 @@ Installation
 ------------
 
 ### Using Package Control:
-
+   * Install the [Package Control](https://sublime.wbond.net/installation) plugin if you don't have it
    * Press Ctrl+Shift+P to bring up the Command Palette (or use Tools > Command Palette menu)
    * Select Package Control: Install Package
    * Type 'JSLint' to find JSLint (with node) for Sublime Text 2

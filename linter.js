@@ -5,7 +5,7 @@ var fs = require('fs');
 var args = process.argv;
 args.splice(0, 2);
 
-var argsWithVals  = ["indent", "maxerr", "maxlen"];
+var argsWithVals  = ["indent", "maxerr", "maxlen", "predef"];
 var valueExpected = null;
 var srcFile = null;
 var options = {};
@@ -21,6 +21,9 @@ args.forEach(function (val, index, array) {
     }
   } else {
     if (valueExpected) {
+      if (val.indexOf('[') === 0) {
+        val = eval(val);
+      }
       options[valueExpected] = val;
       valueExpected = null;
     } else if (index === args.length - 1) {

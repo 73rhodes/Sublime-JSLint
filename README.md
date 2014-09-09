@@ -36,6 +36,7 @@ Installation
 Usage
 -----
 Any of the following will work:
+
    * Bring up the **Command Palette** (`Command+Shift+P` on OS X, `Control+Shift+P` on Linux/Windows), then type `JSLint`.
    * Click the **Tools > JSLint** menu entry.
    * Press `CTRL+L`.

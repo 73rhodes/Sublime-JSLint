@@ -5,6 +5,7 @@ Fast and easy JSLint build system for Sublime Text and Node.JS.
 
    * Does not require Java&trade;.
    * It has jslint built in; only needs [Node.JS](http://nodejs.org) installed on your system.
+   * Alternatively, it can work with a different jslint utility installed on your system.
    * It can automatically run JSLint whenever you save a file.
    * Fully configurable linting options.
    * Jump to errors using F4 / Shift+F4.
@@ -12,7 +13,7 @@ Fast and easy JSLint build system for Sublime Text and Node.JS.
 
 Prerequisites
 -------------
-NodeJS must be installed on your system and you must be able to run 'node' from the command line.
+NodeJS must be installed on your system and you must be able to run 'node' from the command line. Alternatively, if you have a different `jslint` utility already installed on your system, you may update the settings to use it instead.
 
 Installation
 ------------

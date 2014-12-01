@@ -20,8 +20,9 @@
 	  "--vars",
 	  // tolerate ++ and --
 	  "--plusplus",
-	  // tolerate Douglas Crockford
+	  // tolerate blocking Sync methods
 	  "--stupid",
+          // tolerate comments starting with TODO
 	  "--todo",
 	  "$file"
 	],

@@ -5,12 +5,12 @@ var fs = require('fs');
 var args = process.argv;
 args.splice(0, 2);
 
-var argsWithVals  = ["indent", "maxerr", "maxlen", "predef"];
+var argsWithVals = ["indent", "maxerr", "maxlen", "predef", "swiches_tab_elements", "additional_tabs_if_condition"];
 var valueExpected = null;
 var srcFile = null;
 var options = {};
 
-args.forEach(function (val, index, array) {
+args.forEach(function(val, index, array) {
   if (/^--[^\s]*$/.test(val)) {
     var arg = val.replace(/^--/, '');
     if (argsWithVals.indexOf(arg) >= 0) {
@@ -21,8 +21,8 @@ args.forEach(function (val, index, array) {
     }
   } else {
     if (valueExpected) {
-      if (val.indexOf('[') === 0) {
-        val = eval(val);
+      if (val.indexOf('[') === 0 || val.indexOf('{') === 0) {
+        val = JSON.parse(val.replace(/'/g, '"'));
       }
       options[valueExpected] = val;
       valueExpected = null;
@@ -32,7 +32,7 @@ args.forEach(function (val, index, array) {
   }
 });
 
-var srcString = fs.readFile(srcFile, function (err, data) {
+var srcString = fs.readFile(srcFile, function(err, data) {
   if (err) {
     console.log(err);
   } else {

@@ -3,11 +3,17 @@
     "options" : [
 
         // examples using predef flag.
-        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
+        "--predef", "['angular', 'document', '$', '_', 'JQuery', 'FB']"
         // tolerate missing 'use strict' pragma.
         ,"--sloppy"
         // suggest an indent level of two spaces.
-        ,"--indent", "2"
+        ,"--indent", "4"
+        // conf. tab in switch
+        ,"--swiches_tab_elements", "{'respect': true, 'tabs': 1}"
+        // conf. tabs in if condition
+        ,"--additional_tabs_if_condition", "{'respect': false, 'tabs': 1}"
+        // require tapeof with undefined
+        ,"--tapeof_with_undefined"
         // assume node.js to predefine node globals.
         ,"--node"
         // tolerate unfiltered for in.
@@ -32,7 +38,7 @@
     // should be run on a file.
     // if a match is found (i.e. re.search(filename_filter, filename)),
     // the file will be linted.
-    ,"filename_filter": "(\\.js|\\.json)$"
+    ,"filename_filter": "(\\.js|\\.json|\\.html|\\.sass|\\.less|\\.html)$",
 
 
     // jslint command you want to run as an array of strings.

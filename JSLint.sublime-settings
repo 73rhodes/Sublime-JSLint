@@ -1,28 +1,22 @@
 {
     // an array of options to pass to jslint.
     "options" : [
-
-        // examples using predef flag.
-        "--predef", "['angular', 'document', '\\$', '_', 'JQuery', 'FB']"
-        // tolerate missing 'use strict' pragma.
-        ,"--sloppy"
-        // suggest an indent level of two spaces.
-        ,"--indent", "2"
-        // assume node.js to predefine node globals.
+        // tolerate bitwise operators
+        "--bitwise"
+        // tolerate standard browser predefined globals
+        ,"--browser"
+        // tolerate the good parts of ES6
+        ,"--es6"
+        // tolerate 'eval'
+        ,"--eval"
+        // tolerate 'for'
+        ,"--for"
+        // start file and column counts from 1
+        ,"--fudge"
+        // assume Node.js
         ,"--node"
-        // tolerate unfiltered for in.
-        //,"--forin"
-        // tolerate dangling _ in identifiers.
-        ,"--nomen"
-        // tolerate many var statements per function.
-        ,"--vars"
-        // tolerate ++ and --.
-        ,"--plusplus"
-        // tolerate blocking -Sync methods
-        ,"--stupid"
-        // tolerate comments starting with TODO
-        ,"--todo"
-
+        // tolerate 'this'
+        ,"--this"
     ]
 
     // if true, run jslint on save.

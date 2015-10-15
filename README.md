@@ -1,12 +1,12 @@
 Sublime-JSLint
 ==============
 
-Fast and easy JSLint build system for Sublime Text and Node.JS.
+Easy JSLint for Sublime Text.
 
-   * Does not require Java&trade;.
-   * It has jslint built in; only needs [Node.JS](http://nodejs.org) installed on your system.
-   * Alternatively, it can work with a different jslint utility installed on your system.
-   * It can automatically run JSLint whenever you save a file.
+   * It has JSLint built in; requires only [Node.JS](http://nodejs.org) installed on your system.
+   * It can automatically run JSLint when you save a `.js` file.
+   * Support for ES6: The Good Parts.
+   * Now supports JSON.
    * Fully configurable linting options.
    * Jump to errors using F4 / Shift+F4.
    * Works on Linux, MacOS and Windows.

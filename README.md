@@ -1,3 +1,5 @@
+[![DeepScan grade](https://deepscan.io/api/projects/3277/branches/27824/badge/grade.svg)](https://deepscan.io/dashboard#view=project&pid=3277&bid=27824)
+
 Sublime-JSLint
 ==============
 
